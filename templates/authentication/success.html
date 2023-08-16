@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Submission Success</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        color: green;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 20px 0;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: green;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      {% if count == 0 %}
+      <h1>Success! Your All Payment Receipt Send Perfectly.</h1>
+      {% else %}
+      <h1 style="color: red">{{count}} Mail Not Send.</h1>
+      <p style="color: red">
+        [ {% for mail in mails %} {{mail}}, {% endfor %} ]{% endif %}
+      </p>
+      <p>Thank you for For using it.</p>
+      <button onclick="location.href='home'">Return to Homepage</button>
+    </div>
+  </body>
+</html>
