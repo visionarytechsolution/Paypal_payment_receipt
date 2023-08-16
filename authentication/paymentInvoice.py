@@ -7,17 +7,13 @@ from decouple import config
 
 class PaypalPayment:
     apps_credential = [
-        {'client_id': 'ARzu5O9MZfzkPQ5xWFKmdJfqEJvEzcnQfrKxCVPprNUoh_COX3i0VeaKHTcvg6DN8xHy25-1Zq4zXgwc',
-         'client_secret': 'EG7L2EeXHv6EYZOtUIVSUfShGjWU1--UatgaJFxiLKJSugGJVx2ErJQbZwKB0sO_Cx6dYZHdyVWh1nBn',
-         'merchan_email': 'linseluna-pam@yahoo.com'
+        {'client_id': 'AVTVIIRzjYmNIyh7Ku_7UpaVg6Qv0iL3R8sM2qihoDDj0A8xuXRX1pxmbVnFsdaHc2eDSHn6Zyo6HVpC',
+         'client_secret': 'EPl7QpoTkuUJAWAsYXmzEvmAu2VCQqne29Kw2THCtFgmozwb6Quvyl2mtUhIs3o7E_wX-RmhknHWm7zf',
+         'merchan_email': 'barron12260-PatriciaAnderton@yahoo.com'
         },
-        {'client_id': 'EC5wQq7IXXs7_LzeivqIZhZvWtnfKlB2kwaXhveOxCslLG5EZOvBKauhjkxEYs8im2Kk61UDk4kimCok',
-         'client_secret': 'EC5wQq7IXXs7_LzeivqIZhZvWtnfKlB2kwaXhveOxCslLG5EZOvBKauhjkxEYs8im2Kk61UDk4kimCok',
-         'merchan_email': 'yekahi1329@royalka.com'
-        },
-        {'client_id': 'AfF3SSQ_b-qnPnDi4YBUXKvjVqLi5LJRZ5_thKaECh4A2gj72Uhoen7dgfXDqjhtJJMhOWdNq4PqJ9yu',
-         'client_secret': 'EKhL-a26g2_QuXxC1bINaZ3jO50J_A06PyHMkARsAGjZHv_73M1WZVYxIqmWaHQ9virnCjtr6BRyIILo',
-         'merchan_email': 'rohobed391@tipent.com'
+        {'client_id': 'Aa-lw8CJf-SVrUF4WZE3XM-ZD2O5GJjnm__BMmnG3ChKIPRXO4VFUTePzZYzBQmEI-Xerv6oISXDD51O',
+         'client_secret': 'EL_cJLslqwN29xRNVvCVSbVAtSW3o29nWKtOi8yKPxgr3E37yDTwGwvJOXwRqatm8hu7dJPZ5qupo8x9',
+         'merchan_email': 'gacasis515@v1zw.com'
         }
     ]
     # CLIENT_ID = config('PAYPAL_CLIENT_ID')
@@ -104,7 +100,7 @@ class PaypalPayment:
                 print(e, "Error is ->")
                 time.sleep(5)
                 
-            time.sleep(5)
+            time.sleep(10)
             self.i = self.i + 1
             if len(self.apps_credential)== self.i:
                 self.i = 0
